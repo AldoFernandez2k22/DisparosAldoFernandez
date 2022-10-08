@@ -10,4 +10,5 @@ public class FuerzaDeBala : MonoBehaviour
             other.GetComponent<Bala>().fuerzaDeBala();
         }
     }
+   
 }
