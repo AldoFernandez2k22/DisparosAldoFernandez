@@ -6,7 +6,7 @@ using System;
 
 public class Cannon : MonoBehaviour
 {
-	public GameObject bala;
+	public Bala bala;
 	public int tiempoEntreDisparo;
 	public float tiempoParaDestruir;
 	private void Update()
@@ -32,9 +32,9 @@ public class Cannon : MonoBehaviour
 
 	private void Shoot()
 	{
-		GameObject clone = Instantiate(bala, new Vector3(0, 4, 2), Quaternion.identity);
-		clone.GetComponent<Bala>().tiempoParaDestruir = tiempoParaDestruir;
-		clone.GetComponent<Bala>().fuerzaDeBala();
+		Bala clone = Instantiate(bala, new Vector3(0, 4, 2), Quaternion.identity);
+		clone.tiempoParaDestruir = tiempoParaDestruir;
+		clone.fuerzaDeBala();
 
 
 		Debug.Log("Se Instancio una Bala");
