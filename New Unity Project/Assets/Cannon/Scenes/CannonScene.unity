@@ -535,6 +535,26 @@ PrefabInstance:
       propertyPath: bala
       value: 
       objectReference: {fileID: 6432307649157078184, guid: 0742036d5f56af74586a9a57c9914b85, type: 3}
+    - target: {fileID: 5240929966407505378, guid: 8755fbdb47280b948b3357f9352856b1, type: 3}
+      propertyPath: scaleSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5240929966407505378, guid: 8755fbdb47280b948b3357f9352856b1, type: 3}
+      propertyPath: scaleSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5240929966407505378, guid: 8755fbdb47280b948b3357f9352856b1, type: 3}
+      propertyPath: scaleSize.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5240929966407505378, guid: 8755fbdb47280b948b3357f9352856b1, type: 3}
+      propertyPath: tiempoEntreDisparo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5240929966407505378, guid: 8755fbdb47280b948b3357f9352856b1, type: 3}
+      propertyPath: tiempoParaDestruir
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5240929966407505379, guid: 8755fbdb47280b948b3357f9352856b1, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -583,6 +603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cannon
       objectReference: {fileID: 0}
+    - target: {fileID: 5240929966407505380, guid: 8755fbdb47280b948b3357f9352856b1, type: 3}
+      propertyPath: m_TagString
+      value: Cannon
+      objectReference: {fileID: 0}
     - target: {fileID: 6416745431408411886, guid: 8755fbdb47280b948b3357f9352856b1, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.92699355
@@ -603,5 +627,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: -44.058
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 63939495503950313, guid: 8755fbdb47280b948b3357f9352856b1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8755fbdb47280b948b3357f9352856b1, type: 3}

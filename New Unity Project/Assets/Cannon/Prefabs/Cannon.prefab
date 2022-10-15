@@ -162,6 +162,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bala: {fileID: 0}
+  tiempoEntreDisparo: 0
+  tiempoParaDestruir: 0
 --- !u!1 &5240929966428445785
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,7 +206,6 @@ GameObject:
   - component: {fileID: 6416745431408411886}
   - component: {fileID: 6416745431405020364}
   - component: {fileID: 6416745431405987340}
-  - component: {fileID: 22986487261274179}
   - component: {fileID: 63939495503950313}
   m_Layer: 0
   m_Name: Cannon
@@ -220,7 +221,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6416745431408187598}
-  m_LocalRotation: {x: -0.71015173, y: -0, z: -0, w: 0.70404863}
+  m_LocalRotation: {x: -0.6864531, y: 0, z: 0, w: 0.7271741}
   m_LocalPosition: {x: 0, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -228,7 +229,7 @@ Transform:
   - {fileID: 5240929966428445784}
   m_Father: {fileID: 5240929965570702794}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90.495, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -86.7, y: 0, z: 0}
 --- !u!33 &6416745431405020364
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -279,19 +280,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &22986487261274179
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6416745431408187598}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.2872872, y: 3.0955524, z: 4.8739676}
-  m_Center: {x: -0.056426764, y: -0.011504411, z: 1.7685275}
 --- !u!114 &63939495503950313
 MonoBehaviour:
   m_ObjectHideFlags: 0

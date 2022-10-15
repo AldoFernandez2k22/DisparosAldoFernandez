@@ -1,48 +1,53 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 using System.Collections;
-	using System;
+using System;
 
 
 public class Cannon : MonoBehaviour
 {
 	public GameObject bala;
-    private void Update()
-    {
-		if (Input.GetKeyDown("j")) {
-			StartCoroutine(Action(0f, Shoot));
-			StartCoroutine(Action(1f, Shoot));
+	public int tiempoEntreDisparo;
+	public float tiempoParaDestruir;
+	private void Update()
+	{
+		if (Input.GetKeyDown("j"))
+		{
+			StartCoroutine(Action(2,tiempoEntreDisparo, Shoot));
+			
 		}
 
 		if (Input.GetKeyDown("k"))
 		{
-			StartCoroutine(Action(0f, Shoot));
-			StartCoroutine(Action(1f, Shoot));
-			StartCoroutine(Action(2f, Shoot));
+			StartCoroutine(Action(3, tiempoEntreDisparo, Shoot));
 		}
 
 		if (Input.GetKeyDown("l"))
 		{
-			StartCoroutine(Action(0f, Shoot));
-			StartCoroutine(Action(1f, Shoot));
-			StartCoroutine(Action(2f, Shoot));
-			StartCoroutine(Action(3f, Shoot));
+			StartCoroutine(Action(4,tiempoEntreDisparo, Shoot));
+			
 		}
 
 	}
-	
+
 	private void Shoot()
-	{   
-		Instantiate(bala, new Vector3(0,4,2), Quaternion.identity);
-		
-		Debug.Log("The Cannon has been shoot!");
+	{
+		GameObject clone = Instantiate(bala, new Vector3(0, 4, 2), Quaternion.identity);
+		clone.GetComponent<Bala>().tiempoParaDestruir = tiempoParaDestruir;
+		clone.GetComponent<Bala>().fuerzaDeBala();
+
+
+		Debug.Log("Se Instancio una Bala");
 	}
 
-    
 
-    IEnumerator Action(float tiempo, Action action) {
+
+	IEnumerator Action(int repeticiones ,float tiempo, Action action)
+	{   for (int i = 0; i<repeticiones; i++) { 
 		yield return new WaitForSeconds(tiempo);
 		action();
-		 
+		}
+
 	}
 	
 }
